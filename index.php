@@ -15,6 +15,21 @@
 
 <script src = "form.js"></script>
 
+<form>
+    
+    <input type="hidden" name="send_url" value="...">
+    
+    <input type="text" name="field_1">  <br><br>
+    <input type="text" name="field_2">  <br><br>
+    <input type="text" name="field_3">  <br><br>
+    <input type="text" name="field_4">  <br><br>
+    <input type="mail" name="field_5">  <br><br>
+    
+    <span id="form_send" style = "cursor: pointer;">Отправить</span>  <br><br>
+    
+    <div id="form_error"></div>
+    
+</form>
 
 
 
@@ -27,7 +42,7 @@
 
 
 
-
+<script src = "form.js"></script>
 
 </body>
 </html>
