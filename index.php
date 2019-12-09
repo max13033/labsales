@@ -13,8 +13,6 @@
 
 <body>
 
-<script src = "form.js"></script>
-
 <form>
     
     <input type="hidden" name="send_url" value="...">
@@ -41,8 +39,8 @@
 
 
 
-
 <script src = "form.js"></script>
+<script src = "js/jquery.js"></script>
 
 </body>
 </html>

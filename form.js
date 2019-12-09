@@ -30,10 +30,25 @@ form_send.onclick = function(){
     	messege += "Email field is't correct!";
     }
     form_error.innerHTML = messege;
+
+
+
+	// $.ajax({ 
+	//     url: "form.php",   // указываем URL 
+	//     method: "GET",              // HTTP метод, по умолчанию GET 
+	//     data: {field_1: 30},           // данные, которые отправляем на сервер 
+	//     dataType: "json",           // тип данных загружаемых с сервера 
+	// //     success: function (data) { 
+	// // // вешаем свой обработчик события success 
+	// //         // $("#content").html(data) 
+	// //         alert(field_1);
+	// //     } 
+	// });
+
 }
+// if(messege = ""){
 
-
-
+}
 
 
 
