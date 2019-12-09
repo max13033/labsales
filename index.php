@@ -30,15 +30,6 @@
 </form>
 
 
-
-
-
-
-
-
-
-
-
 <script src = "form.js"></script>
 <script src = "js/jquery.js"></script>
 

@@ -31,24 +31,24 @@ form_send.onclick = function(){
     }
     form_error.innerHTML = messege;
 
+    if(messege == ""){
 
+		$.ajax({ 
+		    url: "form.php",   
+		    method: "GET",              
+		    data: {"field_1": field_1, 
+		    		"field_2": field_2,
+		    		"field_3": field_3,
+		    		"field_4": field_4,
+		    		"field_5": field_5
+		    	},    
 
-	$.ajax({ 
-	    url: "form.php",   // указываем URL 
-	    method: "GET",              // HTTP метод, по умолчанию GET 
-	    data: {"field_1": field_1, 
-	    		"field_2": field_2,
-	    		"field_3": field_3,
-	    		"field_4": field_4,
-	    		"field_5": field_5},           // данные, которые отправляем на сервер 
-	    dataType: "json",           // тип данных загружаемых с сервера 
-	//     success: function (data) { 
-	// // вешаем свой обработчик события success 
-	//         // $("#content").html(data) 
-	//         alert(field_1);
-	//     } 
-	});
+		    dataType: "html", 
 
+		    success: function(){	alert("Отправлено");    },
+		    error: function(){    	alert("ERROR"); }          
+		});
+	}	
 }
 
 
