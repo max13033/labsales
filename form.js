@@ -33,22 +33,26 @@ form_send.onclick = function(){
 
 
 
-	// $.ajax({ 
-	//     url: "form.php",   // указываем URL 
-	//     method: "GET",              // HTTP метод, по умолчанию GET 
-	//     data: {field_1: 30},           // данные, которые отправляем на сервер 
-	//     dataType: "json",           // тип данных загружаемых с сервера 
-	// //     success: function (data) { 
-	// // // вешаем свой обработчик события success 
-	// //         // $("#content").html(data) 
-	// //         alert(field_1);
-	// //     } 
-	// });
+	$.ajax({ 
+	    url: "form.php",   // указываем URL 
+	    method: "GET",              // HTTP метод, по умолчанию GET 
+	    data: {"field_1": field_1, 
+	    		"field_2": field_2,
+	    		"field_3": field_3,
+	    		"field_4": field_4,
+	    		"field_5": field_5},           // данные, которые отправляем на сервер 
+	    dataType: "json",           // тип данных загружаемых с сервера 
+	//     success: function (data) { 
+	// // вешаем свой обработчик события success 
+	//         // $("#content").html(data) 
+	//         alert(field_1);
+	//     } 
+	});
 
 }
-// if(messege = ""){
 
-}
+
+
 
 
 
